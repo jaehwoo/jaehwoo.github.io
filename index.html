@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Replace the name and description below before publishing. -->
+  <title>Your Name | Personal Homepage</title>
+  <meta name="description" content="Personal homepage of Your Name: research, publications, and notes.">
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fff; color: #222; font: 17px/1.75 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .page { width: min(100%, 820px); margin: 0 auto; padding: 64px 24px 36px; }
+    header { padding-bottom: 28px; border-bottom: 1px solid #ddd; }
+    h1 { margin: 0; font: 500 clamp(2.4rem, 7vw, 3.4rem)/1.15 Georgia, "Times New Roman", serif; letter-spacing: -0.035em; }
+    .subtitle { color: #555; margin: 14px 0 18px; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 0.95rem; }
+    a { color: #175b80; text-decoration-thickness: 1px; text-underline-offset: 4px; overflow-wrap: anywhere; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 2px solid #175b80; outline-offset: 5px; }
+    section { margin-top: 38px; scroll-margin-top: 24px; }
+    h2 { margin: 0 0 10px; font-size: 1.12rem; font-weight: 650; }
+    p { margin: 0 0 14px; }
+    footer { margin-top: 54px; padding-top: 18px; border-top: 1px solid #ddd; color: #555; font-size: 0.85rem; }
+    .skip-link { position: absolute; top: -100px; left: 16px; padding: 8px 14px; background: #fff; }
+    .skip-link:focus { top: 12px; }
+    @media (max-width: 480px) { .page { padding-top: 40px; } }
+    @media print { .page { padding: 0; } nav, .skip-link { display: none; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header>
+      <!-- EDIT: Your name and, optionally, current role and affiliation. -->
+      <h1>Your Name</h1>
+      <p class="subtitle">Your role · Your institution</p>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#notes">Notes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <!-- EDIT: Replace this paragraph with a short biography. -->
+        <p>Write a short introduction here. You could mention your current role, your academic background, and the questions you enjoy thinking about.</p>
+        <!-- OPTIONAL: Upload cv.pdf to the repository, then remove the comment markers around the next line. -->
+        <!-- <p><a href="cv.pdf">Curriculum vitae (PDF)</a></p> -->
+      </section>
+
+      <section id="research" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research</h2>
+        <!-- EDIT: Describe your interests in two or three sentences. -->
+        <p>Describe your research interests here. A short explanation of the problems that interest you can be more informative than a long list of keywords.</p>
+      </section>
+
+      <section id="publications" aria-labelledby="publications-heading">
+        <h2 id="publications-heading">Publications</h2>
+        <!-- EDIT: Replace this paragraph with your actual publications, or remove this section and its navigation link. -->
+        <p>Add your publications and preprints here, with the title, coauthors, publication details, and links where appropriate.</p>
+        <!-- Example after uploading paper.pdf: <p><strong>Paper title</strong><br>Author names. Publication details.<br><a href="paper.pdf">PDF</a></p> -->
+      </section>
+
+      <section id="notes" aria-labelledby="notes-heading">
+        <h2 id="notes-heading">Notes</h2>
+        <!-- EDIT: Replace with links to material you are ready to make public, or remove this section and its navigation link. -->
+        <p>Add selected lecture notes, expository writing, or talk slides here.</p>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <!-- EDIT: Replace BOTH occurrences of your.name@example.com with your public contact address, or remove the paragraph. -->
+        <p>Email: <a href="mailto:your.name@example.com">your.name@example.com</a></p>
+      </section>
+    </main>
+
+    <footer>Your Name · Personal homepage</footer>
+  </div>
+</body>
+</html>
