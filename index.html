@@ -27,7 +27,7 @@
       justify-content: space-between;
       gap: 32px;
     }
-    .profile-text {
+    .profile-left {
       flex: 1;
     }
     .profile-photo {
@@ -37,7 +37,7 @@
       border-radius: 8px;
       flex-shrink: 0;
     }
-    nav { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 18px; font-size: 0.95rem; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 0.95rem; }
     a { color: #175b80; text-decoration-thickness: 1px; text-underline-offset: 4px; overflow-wrap: anywhere; }
     a:hover { text-decoration-thickness: 2px; }
     a:focus-visible { outline: 2px solid #175b80; outline-offset: 5px; }
@@ -56,10 +56,17 @@
   <div class="page">
     <header>
       <div class="profile-header">
-        <div class="profile-text">
+        <div class="profile-left">
         <!-- EDIT: Your name and, optionally, current role and affiliation. -->
           <h1>Jaehyun Woo</h1>
           <p class="subtitle">Graduate Student · Seoul National University</p>
+          <nav aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <!--<a href="#notes">Notes</a>-->
+            <a href="#contact">Contact</a>
+          </nav>
         </div>
         <img
           class="profile-photo"
@@ -67,13 +74,6 @@
           alt="My photo"
         >
       </div>
-      <nav aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#research">Research</a>
-          <a href="#publications">Publications</a>
-          <!--<a href="#notes">Notes</a>-->
-          <a href="#contact">Contact</a>
-      </nav>
     </header>
 
     <main id="main">
