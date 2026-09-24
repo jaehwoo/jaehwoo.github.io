@@ -20,6 +20,23 @@
     header { padding-bottom: 28px; border-bottom: 1px solid #ddd; }
     h1 { margin: 0; font: 500 clamp(2.4rem, 7vw, 3.4rem)/1.15 Georgia, "Times New Roman", serif; letter-spacing: -0.035em; }
     .subtitle { color: #555; margin: 14px 0 18px; }
+    /* Photo and name layout */
+    .profile-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+    .profile-text {
+      flex: 1;
+    }
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
     nav { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 0.95rem; }
     a { color: #175b80; text-decoration-thickness: 1px; text-underline-offset: 4px; overflow-wrap: anywhere; }
     a:hover { text-decoration-thickness: 2px; }
@@ -38,16 +55,25 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="page">
     <header>
-      <!-- EDIT: Your name and, optionally, current role and affiliation. -->
-      <h1>Jaehyun Woo</h1>
-      <p class="subtitle">Graduate Student · Seoul National University</p>
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <!--<a href="#notes">Notes</a>-->
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="profile-header">
+        <div class="profile-text">
+        <!-- EDIT: Your name and, optionally, current role and affiliation. -->
+          <h1>Jaehyun Woo</h1>
+          <p class="subtitle">Graduate Student · Seoul National University</p>
+        </div>
+        <img
+          class="profile-photo"
+          src="photo.jpg"
+          alt="My photo"
+        >
+          <nav aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <!--<a href="#notes">Notes</a>-->
+            <a href="#contact">Contact</a>
+          </nav>
+      </div>
     </header>
 
     <main id="main">
